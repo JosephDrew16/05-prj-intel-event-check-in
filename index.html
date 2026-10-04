@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,6 +33,12 @@
       <div class="progress-container">
         <div id="progressBar" class="progress-bar"></div>
       </div>
+      <p
+        id="celebration"
+        class="celebration-message"
+        aria-live="polite"
+        hidden
+      ></p>
     </div>
     <div class="container">
       <!-- Feedback message -->
@@ -79,6 +85,11 @@
             <span class="team-name">⚡ Team Renewables</span>
             <span class="team-count" id="powerCount">0</span>
           </div>
+        </div>
+        <div class="attendee-list-section">
+          <h4>Checked-In Attendees</h4>
+          <p id="emptyAttendees">No attendees checked in yet.</p>
+          <ul id="attendeeList" aria-live="polite"></ul>
         </div>
       </div>
     </div>
